@@ -1,0 +1,13 @@
+.vscode/
+*.code-workspace
+
+__pycache__/
+tmp/
+venv/
+.venv/
+
+*.db
+*.db-journal
+test*.*
+property.py
+*.log
