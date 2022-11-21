@@ -17,19 +17,18 @@ class MainCog(commands.Cog):
 
     @commands.Cog.listener(name='on_message')
     async def on_message(self, message):
-
         # Bot同士による会話を制限
         if message.author.bot:
             return
         # コマンドの場合処理をしない
-        elif '!' in message.content:
+        elif message.content in '/':
             return
 
-        if message.content in "うんち":
-            await message.channel.send("うんちぶりぶり")
+        if message.content in 'うんち':
+            await message.channel.send('うんちぶりぶり')
             
-        if message.content in "うんこ":
-            await message.channel.send("うんこぶりぶり")
+        if message.content in 'うんこ':
+            await message.channel.send('うんこぶりぶり')
         return
 
 def setup(bot):
