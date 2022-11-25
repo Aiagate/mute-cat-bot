@@ -24,10 +24,10 @@ class MainCog(commands.Cog):
         elif message.content[0] == '/':
             return
 
-        if message.content in 'うんち':
+        if message.content.find('うんち') != 1:
             await message.channel.send('うんちぶりぶり')
             
-        if message.content in 'うんこ':
+        if message.content,find('うんこ') != 1:
             await message.channel.send('うんこぶりぶり')
         return
 
