@@ -21,13 +21,13 @@ class MainCog(commands.Cog):
         if message.author.bot:
             return
         # コマンドの場合処理をしない
-        elif message.content in '/':
+        elif message.content[0] == '/':
             return
 
-        if message.content in 'うんち':
+        if message.content.find('うんち') != 1:
             await message.channel.send('うんちぶりぶり')
             
-        if message.content in 'うんこ':
+        if message.content,find('うんこ') != 1:
             await message.channel.send('うんこぶりぶり')
         return
 
