@@ -21,7 +21,7 @@ class MainCog(commands.Cog):
         if message.author.bot:
             return
         # コマンドの場合処理をしない
-        elif message.content in '/':
+        elif message.content[0] == '/':
             return
 
         if message.content in 'うんち':
