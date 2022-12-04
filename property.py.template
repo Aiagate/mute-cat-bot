@@ -1,0 +1,9 @@
+LOG_CHANNEL = "CHANNEL_ID"
+INITIAL_EXTENSIONS = [
+    'cogs.maincog',
+    'cogs.mutecatcog',
+    'cogs.systemcog',
+]
+
+DISCORD_KEY = 'DISCORD_API_KEY'
+VERSION = '1.0'
